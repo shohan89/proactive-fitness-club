@@ -29,7 +29,7 @@ const Activities = () => {
               activities.map( activity => <Activity activity={ activity } key={ activity.id } handleAddToList={ handleAddToList }></Activity> )
             }
           </div>
-          <div className="info sticky top-0">
+          <div className="info sticky top-0 h-[100%]">
             <Sidebar></Sidebar>
           </div>
       </div>

@@ -55,6 +55,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* break deails end */}
+      <button className='btn btn-success mt-5 w-[100%]'>Activity Completed</button>
     </div>
   );
 };
