@@ -1,0 +1,50 @@
+[
+  {
+      "id": "01",
+      "activity_name": "Squat",
+      "description": "To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass, or use lighter weights (or simply your body weight) with explosive plyometric movements to develop your power and speed.",
+      "for_age": "20-25",
+      "time_required": 30,
+      "img": "https://images.unsplash.com/photo-1541600383005-565c949cf777?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3F1YXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "02",
+    "activity_name": "Box Jump",
+    "description": "This is a plyometric movement (i.e. a quick, movement that starts with a muscle engthening action, immediately followed by a muscle shortening one) that will help develop strength and power in your legs, specifically the hamstrings, glutes and quads.",
+    "for_age": "20-25",
+    "time_required": 25,
+    "img": "https://images.unsplash.com/photo-1646724744712-f46e824bb0c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym94JTIwanVtcCUyMGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "03",
+    "activity_name": "Bench Press",
+    "description": "An exercise that/'s key for building upper body strength. To perform this exercise properly, you/'ll need to use an Olympic bar or dumbbells for better muscle recruitment.",
+    "for_age": "20-30",
+    "time_required": 25,
+    "img": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVuY2glMjBwcmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "04",
+    "activity_name": "Bosu Squats",
+    "description": "The unstable surface will help develop core strength, balance and strengthen the ankle stabilisers, which can help prevent common ankle injuries that footballers suffer from. Try them on just one leg at a time for a real challenge.",
+    "for_age": "20-25",
+    "time_required": 35,
+    "img": "https://images.unsplash.com/photo-1581460484520-bc7c3f533c9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9zdSUyMHNxdWF0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "05",
+    "activity_name": "Foam Roller",
+    "description": "Using a foam roller both before and after exercise helps massage away knots and tightness in your muscles, which in turn helps prevent injuries and de-stresses the body so it can work more efficiently. It also increases flexibility, all aiding in the much-needed recovery and maintenance process to ensure peak performance throughout a long season.",
+    "for_age": "20-25",
+    "time_required": 25,
+    "img": "https://images.unsplash.com/photo-1591741535585-9c4f52b3f13f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9hbSUyMHJvbGxlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": "06",
+    "activity_name": "Treadmill Interval Sprints",
+    "description": "Playing a game for 90 minutes requires you to have great endurance combined with the ability to put in short bursts of maximum effort. Try a TABATA-style 20 second sprint combined with 10 second recovery and repeat several times to get the full benefit.",
+    "for_age": "20-30",
+    "time_required": 35,
+    "img": "https://images.unsplash.com/photo-1648201512944-13b74490d18b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dHJlYWRtaWxsJTIwaW50ZXJ2YWwlMjBzcHJpbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  }
+]
