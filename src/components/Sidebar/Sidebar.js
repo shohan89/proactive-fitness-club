@@ -17,6 +17,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* personal info end */}
+      {/* Body info start */}
       <div className="body-info mt-5 p-5 bg-slate-200 rounded-lg flex justify-around">
         <div className="weight">
           <p><span className='text-4xl font-semibold'>65</span>kg</p>
@@ -31,6 +32,29 @@ const Sidebar = () => {
           <p>Age</p>
         </div>
       </div>
+      {/* Body info end */}
+      <h3 className='text-2xl font-semibold mt-5 mb-5'>Add A Break</h3>
+      {/* Break Btn start */}
+      <div className="break-btn p-5 bg-slate-200 rounded-lg flex justify-around mb-10">
+        <button className='btn btn-primary mr-4 rounded-full bg-white border-none'>20s</button>
+        <button className='btn btn-primary mr-4 rounded-full bg-white border-none'>10s</button>
+        <button className='btn btn-primary mr-4 rounded-full bg-white border-none'>30s</button>
+        <button className='btn btn-primary mr-4 rounded-full bg-white border-none'>40s</button>
+      </div>
+      {/* Break btn end */}
+      <h3 className='text-2xl font-semibold mt-5 mb-5'>Exercise Details</h3>
+      {/* break deails start */}
+      <div className="break-details">
+        <div className="exercise-time flex justify-between bg-slate-200 pt-4 pb-4 pr-4 pl-4 rounded-lg mb-4">
+          <h4 className='text-xl font-bold'>Exercise Time: </h4>
+          <p>200 seconds</p>
+        </div>
+        <div className="break-time flex justify-between bg-slate-200 pt-4 pb-4 pr-4 pl-4 rounded-lg">
+          <h4 className='text-xl font-bold'>Break Time: </h4>
+          <p>200 seconds</p>
+        </div>
+      </div>
+      {/* break deails end */}
     </div>
   );
 };
