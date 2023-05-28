@@ -2,7 +2,8 @@ import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const Sidebar = () => {
+const Sidebar = ({ handleAddToList }) => {
+  console.log( handleAddToList );
   return (
     <div className='bg-slate-100 p-5'>
       {/* personal info start */}

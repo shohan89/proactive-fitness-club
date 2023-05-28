@@ -6,14 +6,16 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Activities = () => {
   const [ activities, setActivities ] = useState([]);
+  const [ listItems, setListItems ] = useState([]);
   useEffect( ()=>{
     fetch( 'data.json' )
       .then( res => res.json() )
       .then( data => setActivities( data ) )
   },[] )
   // add to list event handler
-  const handleAddToList = () =>{
-    console.log( 'Item Added!!' );
+  const handleAddToList = ( activities ) =>{
+    // setListItems( activities );
+    console.log( activities );
   }
 
   return (
@@ -30,7 +32,7 @@ const Activities = () => {
             }
           </div>
           <div className="info sticky top-0 h-[100%]">
-            <Sidebar></Sidebar>
+            <Sidebar handleAddToList={ handleAddToList }></Sidebar>
           </div>
       </div>
     </>
