@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Activity = ({ activity }) => {
+const Activity = ({ activity, handleAddToList }) => {
   const { activity_name, description, for_age, time_required, img } = activity;
   return (
     <div>
@@ -12,7 +12,7 @@ const Activity = ({ activity }) => {
           <p>For Age: { for_age }</p>
           <p>Time Required: { time_required }s</p>
           <div className="card-actions justify-start">
-            <button className="btn btn-primary">Add To List</button>
+            <button onClick={ handleAddToList } className="btn btn-primary w-[100%] font-bold text-slate-100 ">Add To List</button>
           </div>
         </div>
       </div>
