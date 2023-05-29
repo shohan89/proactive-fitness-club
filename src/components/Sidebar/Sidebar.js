@@ -5,11 +5,13 @@ import React, { useState } from 'react';
 const Sidebar = ( { exerciseTime } ) => {
   // console.log( exerciseTime );
   const [ breakTime, setBreakTime ] = useState(0);
+  const [activeBreak, setActiveBreak] = useState(null); //* This state will update active status of the break buttons
   
   const handleAddToBreak = seconds =>{
     setBreakTime( ( prevBreakTime )=> prevBreakTime + seconds );
-    
+    setActiveBreak( seconds );
   }
+
   return (
     <div className='bg-slate-100 p-5'>
       {/* personal info start */}
@@ -43,10 +45,10 @@ const Sidebar = ( { exerciseTime } ) => {
       <h3 className='text-2xl font-semibold mt-5 mb-5'>Add A Break</h3>
       {/* Break Btn start */}
       <div className="break-btn p-5 bg-slate-200 rounded-lg flex justify-around mb-10">
-        <button onClick={ ()=> handleAddToBreak(20) } className='btn btn-primary mr-4 rounded-full bg-white border-none'>20s</button>
-        <button onClick={ ()=> handleAddToBreak(10) } className='btn btn-primary mr-4 rounded-full bg-white border-none'>10s</button>
-        <button onClick={ ()=> handleAddToBreak(30) } className='btn btn-primary mr-4 rounded-full bg-white border-none'>30s</button>
-        <button onClick={ ()=> handleAddToBreak(40) } className='btn btn-primary mr-4 rounded-full bg-white border-none'>40s</button>
+        <button onClick={ ()=> handleAddToBreak(20) } className={ `btn btn-primary mr-4 rounded-full bg-white border-none ${ activeBreak === 20 ? 'bg-amber-500 rounded-full' : ''  }` }>20s</button>
+        <button onClick={ ()=> handleAddToBreak(10) } className={ `btn btn-primary mr-4 rounded-full bg-white border-none ${ activeBreak === 10 ? 'bg-amber-500 rounded-full' : ''  }` }>10s</button>
+        <button onClick={ ()=> handleAddToBreak(30) } className={ `btn btn-primary mr-4 rounded-full bg-white border-none ${ activeBreak === 30 ? 'bg-amber-500 rounded-full' : ''  }` }>30s</button>
+        <button onClick={ ()=> handleAddToBreak(40) } className={ `btn btn-primary mr-4 rounded-full bg-white border-none ${ activeBreak === 40 ? 'bg-amber-500 rounded-full' : ''  }` }>40s</button>
       </div>
       {/* Break btn end */}
       <h3 className='text-2xl font-semibold mt-5 mb-5'>Exercise Details</h3>
