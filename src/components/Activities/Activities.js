@@ -6,16 +6,17 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Activities = () => {
   const [ activities, setActivities ] = useState([]);
-  const [ listItems, setListItems ] = useState([]);
+  const [exerciseTime, setExerciseTime] = useState(0);
+
   useEffect( ()=>{
     fetch( 'data.json' )
       .then( res => res.json() )
       .then( data => setActivities( data ) )
   },[] )
   // add to list event handler
-  const handleAddToList = ( activities ) =>{
-    // setListItems( activities );
-    console.log( activities );
+  const handleAddToList = ( activity ) =>{
+    const updatedTime = exerciseTime + activity.time_required;
+    setExerciseTime(updatedTime);
   }
 
   return (
@@ -32,7 +33,7 @@ const Activities = () => {
             }
           </div>
           <div className="info sticky top-0 h-[100%]">
-            <Sidebar handleAddToList={ handleAddToList }></Sidebar>
+            <Sidebar exerciseTime={ exerciseTime }></Sidebar>
           </div>
       </div>
     </>
