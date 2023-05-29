@@ -2,6 +2,8 @@ import React from 'react';
 
 const Activity = ({ activity, handleAddToList }) => {
   // console.log( activity );
+  // const [addedToList, setAddedToList] = useState(false);
+  
   const { id, activity_name, description, for_age, time_required, img } = activity;
   return (
     <div>
