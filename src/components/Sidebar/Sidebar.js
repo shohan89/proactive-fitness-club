@@ -11,7 +11,7 @@ const Sidebar = ( { exerciseTime } ) => {
   const [activeBreak, setActiveBreak] = useState(null); //* This state will update active status of the break buttons
   
   const handleAddToBreak = seconds =>{
-    setBreakTime( ( prevBreakTime )=> prevBreakTime + seconds );
+    setBreakTime( seconds );
     setActiveBreak( seconds );
   }
 
@@ -68,7 +68,7 @@ const Sidebar = ( { exerciseTime } ) => {
       </div>
       {/* break deails end */}
       <button onClick={() => {
-          toast.success('Activity Completed successfully');
+          toast.success('Activity Completed successfully!');
         }} className='btn btn-success mt-5 w-[100%]'>
         Activity Completed
         </button>
