@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 
 const Footer = () => {
-  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsAccordionOpen(!isAccordionOpen);
-  };
-
+  
   return (
     <footer className="bg-gray-200 p-5 mt-12">
       <h2 className='text-4xl text-center mt-3 mb-3 font-bold'>FAQ</h2>
