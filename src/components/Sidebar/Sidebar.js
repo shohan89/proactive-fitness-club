@@ -1,6 +1,9 @@
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Sidebar = ( { exerciseTime } ) => {
   // console.log( exerciseTime );
@@ -64,7 +67,12 @@ const Sidebar = ( { exerciseTime } ) => {
         </div>
       </div>
       {/* break deails end */}
-      <button className='btn btn-success mt-5 w-[100%]'>Activity Completed</button>
+      <button onClick={() => {
+          toast.success('Activity Completed successfully');
+        }} className='btn btn-success mt-5 w-[100%]'>
+        Activity Completed
+        </button>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
